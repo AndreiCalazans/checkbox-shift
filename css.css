@@ -1,0 +1,41 @@
+html {
+  background: rgb(94, 81, 217);
+  font-family: helvetica-neue;
+  font-size:20px
+
+  margin:0;
+}
+*, *:after , *:before {
+  box-sizing: inherit;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+}
+form {
+  width:300px;
+  background: rgb(159, 171, 249);
+  box-shadow: 0 0 18px 2px rgba(0,0,0,0.4);
+}
+form div input {
+  margin:20px;
+  border-right: 1px solid black;
+}
+form div label {
+  padding:20px;
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+form div input[type="checkbox" i]:checked {
+  background: yellow !important;
+  color:green;
+
+}
+form div input:checked + label {
+  text-decoration: line-through;
+}
